@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <link rel="icon" href="./assets/files/logo.png">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+        /* ---------------- RESPONSIVE FIXES ---------------- */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        nav .logo {
+            width: 120px;
+        }
+
+        .navbar li a {
+            padding: 10px 18px;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        /* About Section */
+        .about .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 10px;
+        }
+
+        .abt-text {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .abt-text img {
+            width: 240px;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .connectbtn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 22px;
+            background: #007bff;
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            margin-top: 18px;
+        }
+
+        .social-icons a {
+            font-size: 28px;
+            margin: 0 8px;
+        }
+
+        /* ----------- MOBILE RESPONSIVE ----------- */
+        @media (max-width: 768px) {
+
+            nav .navbar {
+                display: block;
+                text-align: right;
+            }
+
+            nav .navbar li a {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+
+            .abt-text img {
+                width: 180px;
+            }
+
+            .abt-text h1 {
+                font-size: 1.8rem;
+            }
+
+            .abt-text p {
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            nav {
+                padding: 10px 15px;
+            }
+
+            nav .logo {
+                width: 90px;
+            }
+
+            .abt-text img {
+                width: 150px;
+            }
+
+            .abt-text h1 {
+                font-size: 1.6rem;
+            }
+
+            .abt-text p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="aboutbody">
+
+    <nav>
+        <img src="./assets/files/logo.png" class="logo" alt="Logo" title="Adventour">
+
+        <ul class="navbar">
+            <li>
+                <a href="./index.html">Home</a>
+                <a href="./index.html#package">Packages</a>
+                <a href="./index.html#locations">Locations</a>
+                <a href="./info.html">About Us</a>
+                <a href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="about">
+        <div class="main">
+            <div class="abt-text">
+                <h1>About <span>Us</span></h1>
+
+                <img src="./assets/files/me.jpg" alt="Admin">
+
+                <hr>
+
+                <p>
+                    Adventour is a travel website project developed using HTML, CSS, and JavaScript.<br><br>
+                    Our team is composed of skilled professionals who strive for excellence and innovation. We always try to
+                    exceed customer expectations and deliver high-quality service.<br><br>
+                    We believe in transparency, trust, and long-term relationships. Thank you for visiting! If you have any
+                    questions or want to know more, feel free to contact us anytime.
+                </p>
+
+                <a href="https://www.linkedin.com/in/amit-kumar-singh-475b36212/" class="connectbtn"
+                    target="_blank">Connect with me!</a>
+
+                <div class="connect-section">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100007787415175" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/iamit010/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://twitter.com/sarcasmit_" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.linkedin.com/in/amit-kumar-singh-475b36212/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/iamit010" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="foot">
+            <div class="footer-content">
+
+                <div class="footlinks">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./booking.html">Register</a></li>
+                        <li><a href="./info.html">About Us</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footlinks">
+                    <h4>Connect</h4>
+                    <div class="social">
+                        <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="end">
+            <p>Copyright © 2025 Adventour All Rights Reserved.<br>
+                Website developed by: Navita Carval</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
